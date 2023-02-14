@@ -1,0 +1,97 @@
+#regForm{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+/* className="OpenSans-12-R" */
+#regForm-container{
+    /* border: 1px solid black; */
+    margin-top: 45px;
+    margin-left: 100px;
+    margin-right: 120px;
+}
+
+#regForm-container>h1{
+    color: #5861AE;
+}
+
+#input-field-block{
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#input-field-block> div{
+    margin-top: 25px;
+}
+
+#input-field-block> div> label{
+    color: #77838F;
+}
+
+.regForm-inputs{
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #77838F;
+    outline: none;
+    width: 390px;
+    color: #424548;
+    font: 600 17px 'Open Sans', sans-serif;
+}
+
+#agreement-block{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#agreement-block> input{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+#agreement-block> p{
+text-align: left;
+text-decoration: underline;
+letter-spacing: 0.49px;
+color: #5861AE;
+margin-left: 12px;
+}
+
+#regForm-Btn-2{
+    color: #4552C1;
+    border: 2px solid #4552C1;
+    border-radius: 4px;
+    font: 700 15px 'Avenir', sans-serif;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    margin-left: 45%;
+    cursor: pointer;
+}
+
+#regForm-Btn-2:hover{
+    background-color: #5861AE;
+    color: #FFFFFF;
+    border: none;
+}
+
+#confirmPasswordErr{
+    color: #EF1A1A;
+    font: 600 17px 'Open Sans', sans-serif;
+}
+
+#validationErr> p{
+    color: #EF1A1A;
+    font: 600 17px 'Open Sans', sans-serif;
+    margin-top: 35px;
+}
+
+

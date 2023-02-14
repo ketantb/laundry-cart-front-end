@@ -1,0 +1,236 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+main {
+    margin: 0px auto;
+    width: 900px;
+}
+
+.model-wrapper{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(189, 189, 189, 0.5);
+}
+.model-container{
+    z-index: 1;
+    position: fixed;
+    top: 0%;
+    left: auto;
+    right: 0%;
+    bottom: auto;
+}
+.pastSummaryContainer {
+    width: 926px;
+    height: 100vh;
+
+    /* UI Properties */
+    margin: 0px auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    /* border: 1px solid red; */
+}
+
+.pastSummaryContainerHeader {
+    height: 8vh;
+    background: #5861AE 0% 0% no-repeat padding-box;
+    display: flex;
+}
+
+.pastSummaryContainerHeader>p {
+    text-align: left;
+    font: normal 800 22px/20px;
+    text-transform: capitalize;
+    margin: auto 10px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.pastSummaryContainerHeader>button {
+    width: 25px;
+    color: #FFFFFF;
+    margin: auto 10px;
+    /* UI Properties */
+    background: #5861AE 0% 0% no-repeat padding-box;
+    margin-right: 10px;
+    font-size: large;
+    border: 2px solid #5861AE;
+}
+
+.clientDetails {
+    display: flex;
+    height: 12vh;
+    /* UI Properties */
+    background: #F4F9FF 0% no-repeat padding-box;
+    
+    
+}
+
+.clientDetails>table {
+    width: 800px;
+    border-collapse: collapse;
+    margin: auto;
+    
+    
+}
+
+.clientDetails>table>tbody {
+    /* border: 1px solid red; */
+    color: white;
+    text-transform: capitalize;
+}
+.clientDetails>table>tbody>tr{
+    border: 1px solid #F4F9FF;
+    
+}
+
+.clientDetails>table>tbody>tr>td {
+    letter-spacing: 0.38px;
+    height: 30px;
+    color: #1B2734;
+    background: #F4F9FF 0% 0% no-repeat padding-box;
+    text-align: center;
+}
+
+.stausBar{
+
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.stausBar>div{
+    height: 5vh;
+    margin: auto;
+    
+}
+.stausBar>div>input{
+    margin: 5px ;
+    margin-top: 10px;
+    
+}
+.orderDetails{
+    height: 35vh;
+}
+.orderDetails>h5 {
+    margin-top: 30px;
+    width: 91px;
+    height: 5vh;
+    text-align: left;
+    margin-left: 5px;
+    text-transform: capitalize;
+    font: normal 600 14px/19px;
+    /* border: 2px solid red; */
+    letter-spacing: 0.42px;
+    color: #3B3737;
+    
+}
+
+.orderDetails>table {
+    width: 100%;
+    margin: 0px auto;
+    border-collapse: collapse;
+}
+.orderDetails>table>thead>tr {
+    border: 1px solid rgb(228, 217, 217);
+}
+
+.orderDetails>table>thead>tr>td {
+    background-color: white;
+    border: 0.1px solid white;
+    width: 55px;
+    text-align: left;
+    font: normal 18px/24px;
+    letter-spacing: 0.43px;
+    color: #1B2734;
+    opacity: 1;
+}
+
+.orderDetails>table>thead>tr>td:nth-child(2) {
+    font-style: italic;
+    
+}
+
+.orderDetails>table>thead>tr>td:nth-child(4) {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.orderDetails>table>thead>tr>td:nth-child(3) {
+    text-align: right;
+}
+.orderDetails>table>tbody>tr>td:nth-child(1){
+    border: 0.1px solid white;
+}
+.orderDetails>table>tbody>tr>td:nth-child(4) {
+    text-align: right;
+    padding: 3px 13px 5px 0px;
+    border: 0.1px solid white;
+    
+}
+
+.orderDetails>table>tbody>tr>td:nth-child(3) {
+    text-align: right;
+}
+
+.orderDetails>table>tfoot>tr>td {
+    background-color: #5861AE;
+    color: #FFFFFF;
+    height: 50px;
+}
+
+.orderDetails>table>tfoot>tr>td:nth-child(4) {
+    text-align: right;
+    padding-right: 13px;
+}
+footer{
+    height: 20vh;
+}
+.addressContainer {
+    width: 150px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #5861AE;
+    border-radius: 4px;
+    height: 10vh;
+}
+.addressContainer>h3{
+    margin: 0%;
+    padding: 2px;
+    width: 54px;
+    text-align: left;
+    font-size: x-small;
+    letter-spacing: 0.18px;
+color: #3E3F40;
+}
+.addressContainer>p{
+    margin: 0%;
+    padding: 2px;
+    text-align: left;
+    font-size: xx-small;
+    letter-spacing: 0.18px;
+    color: #3E3F40;
+}
+.footerdown{
+    /* border: 3px solid pink; */
+    width: 926px;
+height: 70px;
+background: #F4F4F4 0% 0% no-repeat padding-box;
+box-shadow: 0px -3px 6px #00000015;
+align-content: end;
+}
+.footerdown>button{
+width: 150px;
+height: 42px;
+border: 1px solid white;
+background: #F41313  0% no-repeat padding-box;
+border-radius: 4px;
+color: #FFFFFF;
+float: right;
+margin:13px 30px;
+}

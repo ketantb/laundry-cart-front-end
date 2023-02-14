@@ -1,0 +1,23 @@
+.pastOrdercontainer1{
+    overflow-y: scroll;
+    margin: 0px auto;
+    border-collapse: collapse;
+    width: 95%;
+    text-align: center;
+    /* UI Properties */
+    /* border: 2px solid rgb(244, 0, 0);s */
+}
+
+.pastOrdercontainerBody{
+    height: 35px;
+    /* UI Properties */
+    width: 100px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EAEDF0;
+    }
+    
+    .pastOrdercontainerBody>td{
+        /* border: 2px solid rgb(244, 0, 0); */
+    height: 30px;
+    text-align: center;
+    }

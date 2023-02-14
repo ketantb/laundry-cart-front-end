@@ -1,0 +1,180 @@
+.gorderPrvSummary {
+    overflow: auto;
+    color: blue;
+    /* background-color: rgb(77, 77, 212); */
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    right: 0px;
+    width: 850px;
+    /* height: 80vh; */
+    /* min-height:933px ; */
+    /* height: ; */
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  .body-3{
+    height: 60px;
+  }
+  .table-borderless{
+    width: 90%;
+    margin: auto;;
+  }
+  .body-3 tr {
+    /* border: 2px solid black; */
+    height: 50px;
+    border-bottom: 1px solid black;
+    
+
+  }
+  #erorr{
+    height: 615px;
+  }
+  /* .xc{
+
+    border: 2px solid black;
+  } */
+  .body-3 tr td {
+    /* width: 90%; */
+    height: 50px;
+    
+  }
+  .err{
+    /* width: 90px; */
+  }
+  /* #table-hover>tbody{
+    border: 2px solid green;
+
+  } */
+  .sl{
+    width: 90%;
+    margin-left: 1vh;
+  }
+  
+  .thSumry{
+    background-color: #F4F9FF;
+  }
+  /* .gorderSummaryHeader3{
+  border-bottom: px solid black;
+
+} */
+
+  select{
+    width:150px;
+    margin-left: -90px;
+    /* background-color:#f4f4f4; */
+    /* border-radius: 5px; */
+    border: 0px solid ;
+    /* border-bottom: 1px solid blac */
+  }
+  
+  .gHeader1Osum {
+    background-color: #5861ae;
+    height: 10vh;
+    color: white;
+    padding: 0.5em 1em;
+  }
+  .sum{
+    margin: auto 20px ;
+    margin-top: 10px;
+    font: normal normal 600 22px/20px Open Sans;
+  }
+  .gbuttonOsumcloseCont {
+    float: right;
+  }
+  .gbuttonOsumclose {
+    background-color: #5861ae;
+    border: 1px solid #5861ae;
+    color: #f4f9ff;
+    margin-top: -20px;
+    font-size: larger;
+  }
+  
+  .goderSummaryheader2 {
+    text-align: center;
+    padding: 1em;
+    background-color: #f4f9ff;
+  }
+  
+  
+  .gordersumTable {
+    padding: 1em 2em;
+  }
+  
+  .GeditedRow {
+    background-color: #5861ae;
+    color: white;
+  }
+  .GprevsumaddressCont {
+    display: flex;
+    gap: 2em;
+  }
+  .gorderSummaryHeader3 {
+    padding: 1em;
+    color: #3B3737;
+  }
+  #xys{
+    margin: 0%;
+    /* border: 2px solid green; */
+    height: 60vh;
+  }
+  .Gprevsumaddressmain {
+    color: #3e3f40;
+    width: 236px;
+    font: normal normal normal 16px/22px Open Sans;
+    letter-spacing: 0.16px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #0c86dd;
+    border-radius: 4px;
+    margin-top: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.3em;
+    padding-bottom: 0.3em;
+  }
+  .Gprevsumaddress {
+    color: #3e3f40;
+    width: 236px;
+    font: normal normal normal 16px/22px Open Sans;
+    letter-spacing: 0.16px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #48484f;
+    border-radius: 4px;
+    margin-top: 1em;
+    padding-left: 0.5em;
+  }
+  .homeclassse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .tickimage {
+    /* display: inline-block; */
+    float: right;
+    width: 1em;
+    height: 1em;
+  }
+  .GaddNewAddress {
+    margin-top: 2em;
+    padding-left: 0.5em;
+    color: #5861ae;
+  }
+  
+  .GoviConfirmButton {
+    margin-top: 0px;
+    background-color: #f4f4f4;
+    color: white;
+    text-align: right;
+    padding: 1em 2em;
+  }
+  .GbuttonforOrder {
+    background-color: #5861ae;
+    color: white;
+    padding: 0.5em 0em;
+    border-radius: 0.2em;
+    width: 56px;
+    border: none;
+    height: 2.5em;
+  }
+  

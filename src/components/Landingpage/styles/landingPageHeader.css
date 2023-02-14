@@ -1,0 +1,42 @@
+#LP-header-container{
+    height: 65px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #0000000F;
+    align-items: center;
+}
+
+#LP-header-left-col{
+    margin-left: 115px;
+    letter-spacing: 1.8px;
+    color: #5861AE;
+    text-transform: uppercase;
+}
+
+#LP-header-right-col{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#LP-header-right-col > div{
+    width: 112px;
+    height: 65px;
+    color: #565657;
+    text-align: center;
+    border-left: 1px solid #E3E3E3;
+    padding-top: 22px;
+}
+
+#LP-header-right-col > div:hover{
+    background: #5861AE 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#LP-header-right-col > div:last-child{
+    background-color: #5861AE;
+    color: #FFFFFF;
+}

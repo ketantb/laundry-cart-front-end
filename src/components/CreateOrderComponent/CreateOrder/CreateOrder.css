@@ -1,0 +1,33 @@
+.createheaderContainer {
+    height: 10vh;
+    /* border: 1px solid green; */
+    
+}
+.createM{
+    display: flex;
+   margin:25px auto;
+    width: 95%;
+}
+
+.createleftItem {
+    margin-right: auto;
+    text-align: left;
+    margin-left: 0px;
+
+}
+
+.createrightItem {
+    display: flex;
+    margin-right: 0px;
+
+}
+.createSearch {
+    margin-left: 10px;
+margin-top: 2px;
+background: transparent url('../../PastOrderComponents/pastOrderHeader/search.png') 0%  no-repeat padding-box;
+width: 200px;
+height: 21px;
+border: none;
+border-bottom: 1px solid gray;
+
+}

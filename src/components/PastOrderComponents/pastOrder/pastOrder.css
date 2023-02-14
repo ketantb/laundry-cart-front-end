@@ -1,0 +1,32 @@
+
+
+.pastOrdercontainer{
+    overflow-y: scroll;
+    margin: 0px auto;
+    border-collapse: collapse;
+    width: 95%;
+    text-align: center;
+    /* UI Properties */
+    /* border: 2px solid rgb(244, 0, 0); */
+}
+#cancelXbtn{
+    color: red;
+    cursor: pointer;
+}
+
+.pastOrdercontainerHead {
+    background: #383737 0% 0% no-repeat padding-box;
+    height: 35px;
+    border-radius: 3px 3px 0px 0px;
+    border: 1px solid #EAEDF0;
+    border-radius: 3px 3px 0px 0px ;
+    border: 2px solid rgb(33, 9, 9);
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+}
+.pastOrdercontainerHead>tr>th{
+    padding: 0%;
+    text-align: center;
+    
+}

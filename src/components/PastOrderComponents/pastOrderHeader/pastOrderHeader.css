@@ -1,0 +1,48 @@
+.pastheaderContainer {
+    height: 10vh;
+    
+}
+.pastM{
+    display: flex;
+   margin:25px auto;
+    width: 95%;
+}
+
+.leftItem {
+    margin-right: auto;
+    text-align: left;
+    margin-left: 0px;
+
+}
+
+.rightItem {
+    display: flex;
+    margin-right: 0px;
+
+}
+
+.CreateBtn {
+    width: 107px;
+    height: 32px;
+    margin: 0px 5px;
+    /* UI Properties */
+    border: 1px solid #5861AE;
+    background-color: white;
+    border-radius: 4px;
+    /* text */
+    font-family: sans-serif;
+    font: normal 600 14px/48px;
+    letter-spacing: 0px;
+    color: #5861AE;
+
+}
+.Search {
+    margin-left: 10px;
+margin-top: 2px;
+background: transparent url('search.png') 0%  no-repeat padding-box;
+width: 200px;
+height: 21px;
+border: none;
+border-bottom: 1px solid gray;
+
+}

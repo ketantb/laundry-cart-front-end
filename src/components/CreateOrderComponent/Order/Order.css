@@ -1,0 +1,30 @@
+.ordergridContainer {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 40px auto;
+  }
+  .mainCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-decoration: none;
+
+  }
+  
+  .Cbtn{
+    width: 107px;
+    text-transform: capitalize;
+height: 32px;
+/* UI Properties */
+border: 1px solid #5861AE;
+border-radius: 4px;
+cursor: pointer;
+margin-left: 40px;
+  }
+#pBTN{
+   margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #5861AE;
+
+  }

@@ -1,0 +1,79 @@
+#LP-footer-container {
+    /* height: 327px; */
+    border-top: 3px solid #5861AE;
+}
+
+#footer-1 {
+    text-align: center;
+    height: 80px;
+    border: 3px solid #0000000B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer-1-line-1 {
+    font: normal normal 600 24px/26px Open Sans;
+    letter-spacing: 0.96px;
+    color: #5861AE;
+}
+
+#footer-1-line-2 {
+    margin-top: 5px;
+    font: italic bold 10px/26px Open Sans;
+    letter-spacing: 0.4px;
+    color: #3D3D43;
+}
+
+#footer-2{
+    margin-top: 0px;
+    height: 197px;;
+    background-image: url("../Assets/Footer@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -20px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #182838;
+    /* align-items: center; */
+}
+
+#footer-2> div{
+    margin-top: 4%;
+}
+
+#footer-2> div > p{
+    margin-top: 15px;
+}
+
+#social-icons-container{
+    margin-top: 10px;
+    display: flex;
+}
+
+.fb-icon{
+    height: 20px;
+    width: 20px;
+}
+
+.insta-icon{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.linkedin-icon{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+#footer-3{
+    height: 50px;
+    background-color: #182838;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 15px;
+    /* font: normal normal normal 12px/24px Avenir; */
+    letter-spacing: 0.12px;
+}
