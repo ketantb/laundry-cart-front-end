@@ -13,18 +13,26 @@
   }
   
   .Cbtn{
-    width: 107px;
+    font: 500 15px "Open Sans";
+    color: #606060;
+    background-color: #ece9e9;
+    width: 120px;
     text-transform: capitalize;
-height: 32px;
-/* UI Properties */
-border: 1px solid #5861AE;
-border-radius: 4px;
-cursor: pointer;
-margin-left: 40px;
+    height: 38px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 40px;
+    border: none;
   }
-#pBTN{
-   margin-bottom: 10px;
+
+  .Cbtn:hover{
+    background-color: #5861AE;
+    color: #ffffff;
+  }
+
+#pls-create-order{
+    margin-bottom: 10px;
     text-transform: uppercase;
     color: #5861AE;
-
+    font: 700 15px "Open Sans";
   }

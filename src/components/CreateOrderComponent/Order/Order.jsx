@@ -19,7 +19,7 @@ const Order = (props) => {
         <div className="ordercomponent">
               <div className="mainCon">
                 <div>
-              <p id="pBTN">Please Create Your Order</p>
+              <p id="pls-create-order">Please Create Your Order</p>
             <Link className="linkstyle" to="/createorder">
           <button className="Cbtn"> create</button>
             </Link>

@@ -4,6 +4,7 @@ import "./SummaryPage.css";
 
 import GsumOrderRow from "./GsumOrderRow";
 import tickpic from "../images/tick.png";
+import { RxCross2 } from 'react-icons/rx';
 
 export default function SummaryPage({
   GcancelSummary,
@@ -71,37 +72,39 @@ export default function SummaryPage({
   // console.log( "gOrderdata",gOrderdata)
   return (
     <div id='erorr' className="gorderPrvSummary">
+      <section>
       <div className="gHeader1Osum">
         <div className='sum'>Summary</div>
         <span className="gbuttonOsumcloseCont">
           <button className="gbuttonOsumclose" onClick={() => GcancelSummary()}>
-            X
+          <RxCross2 />
           </button>
         </span>
       </div>
       <div className="goderSummaryheader2">
-        <table className="table table-borderless">
-          <thead>
-            <tr>
-            <th className="thSumry" scope="col" style={{color:"black"}}>store Location</th>
-              <th className="thSumry" scope="col" style={{color:"black"}}>Store Address</th>
-              <th className="thSumry" scope="col" style={{color:"black"}}>Phone</th>
-            </tr>
-          </thead>
-          <tbody className="body-3">
-            <tr className='err'>
-              <td className='xc'><select className='sl'><option>{user.District}</option>
-                        </select></td>
-              <td  className="xc">{user.Address}</td>
-              <td className="xc">{user.Phone}</td>
-            </tr>
-          </tbody>
-        </table>
+      <select name="cars" id="cars">
+            <option value="Store Location">Store Location</option>
+            <option value="Pune">Pune</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bangalore">Bangalore</option>
+          </select>
+          <div>
+            <div className="thSumry">{user.Address}</div>
+            <div>
+              _
+            </div>
+          </div>
+          <div>
+            <div className="thSumry">{user.Phone}</div>
+            <div>
+              _
+            </div>
+          </div>
       </div>
       <div id='xys' className="gorderSummaryHeader3">
         Orders details :
         <div className="gordersumTable">
-          <table id="table-hover  ">
+          <table className="sum-table">
             <tbody>
               {gOrderdata.shirts.quantity !== 0 && (
                 <GsumOrderRow
@@ -166,7 +169,7 @@ export default function SummaryPage({
             </tbody>
           </table>
         </div>
-        <div style={{ fontSize: "12px", color: "#3B3737" }}>Address</div>
+        <div style={{ fontSize: "13px", fontWeight: "700", color: "#3B3737" }}>Address</div>
         <div className="GprevsumaddressCont">
           <div className="Gprevsumaddressmain">
             <div className="homeclassse">
@@ -175,13 +178,13 @@ export default function SummaryPage({
                 <img className="tickimage" src={tickpic} alt="selected" />
               </div>
             </div>
-            <div>{user.Address+","+user.State+","+user.District}</div>
+            <div>{!user.Address ? "#223, 10th road, Jp Nagar, Bangalore" : user.Address +","+user.State+","+user.District}</div>
           </div>
           <div className="Gprevsumaddress">
             <div>
               <b>Office</b>
             </div>
-            <div>1-52,kp Road,NED,Maharastra</div>
+            <div>#223, 10th road, Jp Nagar, Bangalore</div>
           </div>
           <div className="GaddNewAddress">
             <div>
@@ -190,6 +193,8 @@ export default function SummaryPage({
           </div>
         </div>
       </div>
+      </section>
+      <section>
       <div className="GoviConfirmButton">
         {totalprice !==0 && (
           <button
@@ -202,6 +207,7 @@ export default function SummaryPage({
           </button>
         )}
       </div>
+      </section>
     </div>
   );
 }

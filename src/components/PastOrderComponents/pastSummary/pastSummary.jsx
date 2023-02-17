@@ -59,7 +59,7 @@ const PastSummary = ({closeOrder}) => {
                     <thead>
                         <tr>
                             <td>Shirts</td>
-                            <td>wasing</td>
+                            <td>washing</td>
                             <td>5X20 =</td>
                             <td>100</td>
                         </tr>
