@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 const PastSummary = ({closeOrder}) => {
     const [cancelAlert, setcancelAlert] = useState(false)
-
     const cancelOrder =()=>setcancelAlert(false)
 
     const Cancel =()=>{
@@ -24,10 +23,10 @@ const PastSummary = ({closeOrder}) => {
                     <tbody>
                         <tr>
 
-                        <td> <div>strore Location</div> <div>
-                        jp
+                        <td> <div>Store Location</div> <div>
+                        Viman Nagar
                             </div> </td>
-                        <td><div>strore Address:</div><div>mdksfkvnfkj</div> </td>
+                        <td><div>Store Address:</div><div>Pune</div> </td>
                         <td><div>Phone</div><div>0987658909</div> </td>
                         </tr>
                     </tbody>

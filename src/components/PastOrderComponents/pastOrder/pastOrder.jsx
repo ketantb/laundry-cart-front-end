@@ -9,7 +9,7 @@ const PastOrder = (props) => {
 
   const [products,setProducts]=useState([])
   useEffect(() => {
-    fetch('https://laundarycart.onrender.com/products').then((res)=>res.json()).then((product)=>{
+    fetch('https://lc-backend.onrender.com/products').then((res)=>res.json()).then((product)=>{
       setProducts(product)
     }).catch((err)=>{
       console.log(err)
@@ -38,17 +38,14 @@ const PastOrder = (props) => {
           </tr>
         </thead>
         <tbody>
-          {products.map((product,index)=>{
+          {!products ? <h1>Loading...</h1> : 
+          products.map((product,index)=>{
            return(
             <TRproduct user={props.user}  key={index} product={product}/>
            )
           })
-            
           }
-         
-
         </tbody>
-
       </table>
     </>
   )

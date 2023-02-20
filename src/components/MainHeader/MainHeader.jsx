@@ -20,7 +20,7 @@ const MainHeader = (props) => {
           <li className="light-text Avenir-14">career</li>
           <div className="header-nav">
             <span><img className='userImg' src={Dp} alt="dp" /></span>
-            <p className='user Avenir-14'>{props.user.Name}</p>
+            <p className='user Avenir-14'>{'Ketan'}</p>
             <span>{localStorage.getItem("name")}</span> 
             <Link to={"/"}>
               <span>             

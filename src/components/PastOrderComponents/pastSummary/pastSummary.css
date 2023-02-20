@@ -224,13 +224,18 @@ background: #F4F4F4 0% 0% no-repeat padding-box;
 box-shadow: 0px -3px 6px #00000015;
 align-content: end;
 }
-.footerdown>button{
+.footerdown> button{
 width: 150px;
 height: 42px;
 border: 1px solid white;
-background: #F41313  0% no-repeat padding-box;
+background-color: #5861AE;
 border-radius: 4px;
 color: #FFFFFF;
 float: right;
 margin:13px 30px;
+cursor: pointer;
+}
+
+.footerdown> button:hover{
+    background-color: #f50505;
 }

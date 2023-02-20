@@ -32,7 +32,7 @@ const RegistrationForm = (props) => {
 
     const postRegForm = async (e) => {
         e.preventDefault()
-        await axios.post('/register', regFormData)
+        await axios.post('https://lc-backend.onrender.com/register', regFormData)
             .then((res) => {
                 // console.log(res)
                 setRegisterSuccess(true)
@@ -54,7 +54,7 @@ const RegistrationForm = (props) => {
                     setErr({Password: "Passwords do NOT Match"})
                 }
                 else if(err.response.data == "Agree all T & C"){
-                    setErr({TnC: "You must Agree All the TERM & CONDITIONS"})
+                    setErr({TnC: "You must Agree All the TERMS & CONDITIONS"})
                 }
             })
             // console.log(regFormData)

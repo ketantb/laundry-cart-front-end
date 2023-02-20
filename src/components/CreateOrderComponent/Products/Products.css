@@ -131,40 +131,49 @@ border-radius: 2px;
       background: #FFFFFF 0% 0% no-repeat padding-box;
       border: 1px solid #5861AE;
       border-radius: 2px;
-
-     
+      outline: none;
     }
+
     .icon {
       margin: 0px 40px;
+      cursor: pointer;
     }
 
-    
- 
     div.btnScetion {
       text-align: right;
       margin-right: 5%;
       padding-bottom: 2em;
     }
     .button2 {
-      background-color: #5861ae;
-      color: white;
+      background-color: #FFFFFF;
       opacity: 1;
       border: 1px solid #000000;
-      height: 30px;
-      border-radius: 8px;
+      height: 40px;
+      border-radius: 5px;
       width: 100px;
       margin-top: 10px;
+      cursor: pointer;
     }
     
     .button1 {
-      color: #5861ae;
-      border-radius: 8px;
+      border-radius: 5px;
       background-color: #FFFFFF;
-      border: 1px solid #5861ae;
+      border: 1px solid #000000;
       margin-right: 2%;
-      height: 30px;
+      height: 40px;
       width: 100px;
       margin-top: 10px;
+      cursor: pointer;
+    }
+    .button2:hover{
+      background-color: #5861ae;
+      color: #FFFFFF;
+      border: none;
+    }
+    .button1:hover{
+      background-color: #5861ae;
+      color: #FFFFFF;
+      border: none;
     }
     
     .Cimage {

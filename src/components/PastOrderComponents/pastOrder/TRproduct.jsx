@@ -28,7 +28,7 @@ const TRproduct = ({product,key,user}) => {
         let intHrs= parseInt(hrs)
         let intMin=parseInt(min)
         
-        setCanceDirect('Canceled')
+        setCanceDirect('Cancelled')
         setCanceD(timeTim)
 
     }
@@ -37,7 +37,7 @@ const TRproduct = ({product,key,user}) => {
 
   return (
               <tr className='pastOrdercontainerBody'>
-              <td> {Orderid.substr(5,6) }</ td>
+              <td> {Orderid.substr(5, 7)}</ td>
               < td> {DateP.substr(0,10)+" & "+DateP.substr(11,5)}</ td>
               < td> Gp nagar</ td>
               < td> {product.storelocation}</ td>
@@ -46,7 +46,7 @@ const TRproduct = ({product,key,user}) => {
               < td> {product.totalcost} </ td>
               < td> {CanceD}</ td>
               < td> <span id='cancelXbtn' onClick={timeCal}>{CanceDirect}</span>  </ td>
-              < td>
+              < td id="eyeIcon">
                 <AiOutlineEye onClick={() =>{setshowOrder(true)}} />
               </ td>
         {showOrder && <PastSummary closeOrder={closeOrder} />}
