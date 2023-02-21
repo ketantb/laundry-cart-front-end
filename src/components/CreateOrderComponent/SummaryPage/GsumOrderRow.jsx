@@ -16,7 +16,7 @@ const GsumOrderRow = ({ elementInfo, elementtype }) => {
           <span>{elementInfo.quantity}</span>
           <span> X </span>
           <span>
-            {5 *
+            {10 *
               (elementInfo.washing +
                 elementInfo.ironing +
                 elementInfo.drycleaning +
@@ -27,7 +27,7 @@ const GsumOrderRow = ({ elementInfo, elementtype }) => {
         <td>
           <span>
             {elementInfo.quantity *
-              5 *
+              10 *
               (elementInfo.washing +
                 elementInfo.ironing +
                 elementInfo.drycleaning +

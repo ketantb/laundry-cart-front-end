@@ -20,7 +20,7 @@ function SucessfullModal() {
                     <p>You can track the delivery in the "Orders" section.</p>
                 </div>
                 <div>
-                    <button onClick={()=>navaigate('/order')} className='GbuttonforOrder'>Go to orders</button>
+                    <button onClick={()=>navaigate('/pastorder')} className='GbuttonforOrder'>Go to orders</button>
                 </div>
             </div>
         </div>

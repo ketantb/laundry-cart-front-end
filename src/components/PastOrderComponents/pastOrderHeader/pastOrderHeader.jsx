@@ -11,7 +11,7 @@ const PastOrderHeader = () => {
     <div className='pastM'>
 
         <div className='leftItem'>
-        Orders |{ordersCount}        
+        Orders       
         </div>
         <div className='rightItem'>
           <Link to={"/createOrder"}>

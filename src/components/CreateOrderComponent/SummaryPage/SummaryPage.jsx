@@ -56,7 +56,7 @@ export default function SummaryPage({
       gOrderdata.others.drycleaning +
       gOrderdata.others.chemicalcleaning);
   const totalprice =
-    5 *
+    10 *
     (totalitems1 +
       totalitems7 +
       totalitems2 +

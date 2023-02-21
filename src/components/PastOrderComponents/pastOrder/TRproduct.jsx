@@ -5,8 +5,8 @@ import { AiOutlineEye } from 'react-icons/ai';
 
 const TRproduct = ({product,key,user}) => {
 
-    const closeOrder = () => setshowOrder(false);
-    const [showOrder, setshowOrder] = useState(false)
+    const closePastSummary = () => setshowPastSummary(false);
+    const [showPastSummary, setshowPastSummary] = useState(false)
     const [CanceDirect, setCanceDirect] = useState('cancel order')
     const [CanceD, setCanceD] = useState('x')
     const Orderid= product._id
@@ -47,9 +47,9 @@ const TRproduct = ({product,key,user}) => {
               < td> {CanceD}</ td>
               < td> <span id='cancelXbtn' onClick={timeCal}>{CanceDirect}</span>  </ td>
               < td id="eyeIcon">
-                <AiOutlineEye onClick={() =>{setshowOrder(true)}} />
+                <AiOutlineEye onClick={() =>{setshowPastSummary(true)}} />
               </ td>
-        {showOrder && <PastSummary closeOrder={closeOrder} />}
+        {showPastSummary ? <PastSummary closePastSummary={closePastSummary} product={product}/> : null}
             </tr>
   )
 }

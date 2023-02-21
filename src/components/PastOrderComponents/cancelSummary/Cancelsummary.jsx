@@ -12,7 +12,7 @@ const Cancelsummary = () => {
       icon: "success",
       button: "Procced",
     }).then(function() {
-      window.location = "/order";
+      window.location = "/pastorder";
   })
    }
     </div>
