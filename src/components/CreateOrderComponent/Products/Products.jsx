@@ -23,7 +23,6 @@ import { useNavigate } from "react-router-dom";
 const Products = (props) => {
   const navigate = useNavigate();
   const gettoken = localStorage.getItem("token");
-  console.log(gettoken);
   const token = `test ${gettoken}`;
   const [orderSucessStyle, setorderSucessStyle] = useState("none");
 

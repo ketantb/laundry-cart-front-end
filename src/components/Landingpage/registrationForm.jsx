@@ -32,6 +32,7 @@ const RegistrationForm = (props) => {
 
     const postRegForm = async (e) => {
         e.preventDefault()
+        // await axios.post('http://localhost:8080/register', regFormData)
         await axios.post('https://lc-backend.onrender.com/register', regFormData)
             .then((res) => {
                 // console.log(res)

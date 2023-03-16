@@ -6,7 +6,6 @@ import SideNav from "./SideNav/SideNav";
 import OrderFooter from "./OrderFooter/OrderFooter";
 
 const RouterLink = (props) => {
-  console.log(props.user)
   return (
     <>
       <MainHeader user={props.user} />

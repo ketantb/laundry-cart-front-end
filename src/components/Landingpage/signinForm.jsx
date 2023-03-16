@@ -8,14 +8,8 @@ import {useNavigate} from 'react-router-dom'
 
 const SigninForm = () => {
     const navigate = useNavigate()
-    const [signinSuccess, setSignSuccess] = useState("")
-    const [signInData, setSignInData] = useState({emailOrMobile: "", password: ""})
+    const [signInData, setSignInData] = useState({email: "", password: ""})
     const [error, setError] = useState({email: null, password: null, both: null})
-    useEffect(() => {
-      if(signinSuccess){
-        navigate('/order')
-      }
-    }, [signinSuccess])
     const handleSignInForm = (params) => (e) => {
         setSignInData({...signInData, [params]: e.target.value})
         error.email = null
@@ -26,8 +20,8 @@ const SigninForm = () => {
     const handleSignIn = async (e) => {
         e.preventDefault()
         const signInPostData = {
-            emailOrMobile: signInData
-                           .emailOrMobile
+            email: signInData
+                           .email
                            .split(" ")
                            .filter((i) => i!="")
                            .join("")
@@ -38,13 +32,15 @@ const SigninForm = () => {
                       .filter((i) => i!="")
                       .join("")
         }
+        // await axios.post('http://localhost:8080/signin', signInPostData )
         await axios.post('https://lc-backend.onrender.com/signin', signInPostData )
         .then((res) => {
-            setSignSuccess(res)
-
-                // console.log(res.data.token);
-                // window.localStorage("token",JSON.stringify(res.data.token))
-    
+            // setSignSuccess(res)
+                // console.log(res.data.data.token);
+                // console.log(res.data.data.userName);
+                localStorage.setItem("token", res.data.data.token)
+                localStorage.setItem('userName', res.data.data.userName)
+                navigate('/order')
           })
           .catch((err) => {
             console.log(err.response.data);
@@ -52,6 +48,7 @@ const SigninForm = () => {
             else if(err.response.data == "Invalid Email"){setError({email: "Please enter a valid email/phone number"})}
             else if(err.response.data == "Invalid Password"){setError({password: "Password Invalid"})}
           });
+          
         // console.log(signInData)
     }
     return (
@@ -59,10 +56,10 @@ const SigninForm = () => {
             <div id="LP-main-block-2-container">
                 <h1 className="Avenir-32">SIGN IN</h1>
                 <div>
-                    <label className="OpenSans-15-R" htmlFor="signin-email-mobile">Mobile / Email</label>
+                    <label className="OpenSans-15-R" htmlFor="signin-email-mobile">Email</label>
                     <div>
                         <input className={!error.email?"signin-inputs":"signin-inputs-error"} type="text" id="signin-email-mobile" 
-                        onChange={handleSignInForm("emailOrMobile")}/>
+                        onChange={handleSignInForm("email")}/>
                     </div>
                     <div className="input-error">{error.email}</div>
                 </div>

@@ -5,11 +5,12 @@ import './MainHeader.css'
 import {useNavigate} from 'react-router-dom'
 
 const MainHeader = (props) => {
-
-  // console.log(props.user.Name)
+  // console.log(props)
+    const navigate = useNavigate()
     const logout = (e)=>{
         console.log("hi....")
         localStorage.clear()
+        navigate('/')
       }
       return (
         <nav className="header">
@@ -20,7 +21,7 @@ const MainHeader = (props) => {
           <li className="light-text Avenir-14">career</li>
           <div className="header-nav">
             <span><img className='userImg' src={Dp} alt="dp" /></span>
-            <p className='user Avenir-14'>{'Ketan'}</p>
+            <p className='user Avenir-14'>{localStorage.getItem("userName")}</p>
             <span>{localStorage.getItem("name")}</span> 
             <Link to={"/"}>
               <span>             

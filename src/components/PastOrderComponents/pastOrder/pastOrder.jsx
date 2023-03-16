@@ -32,7 +32,6 @@ const PastOrder = (props) => {
             < th> store phone</ th>
             < th> total Item</ th>
             < th>price</ th>
-            < th> status</ th>
             < th></ th>
             < th> view</ th>
           </tr>
